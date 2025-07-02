@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Insira o valor"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <TextView
+        android:id="@+id/textViewValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira um valor entre 1 e 19"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="377dp"
+        android:layout_height="78dp"
+        android:text="Mostrar Série"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <TextView
+        android:id="@+id/textViewSerie"
+        android:layout_width="376dp"
+        android:layout_height="559dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="314dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
