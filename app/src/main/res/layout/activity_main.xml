@@ -9,35 +9,48 @@
 
     <EditText
         android:id="@+id/editTextValor"
-        android:layout_width="382dp"
-        android:layout_height="48dp"
+        android:layout_width="362dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="3dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Insira o valor"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="152dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValor" />
 
     <TextView
         android:id="@+id/textViewValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="121dp"
         android:text="Insira um valor entre 1 e 19"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="133dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
 
     <Button
-        android:id="@+id/buttonCalcular"
+        android:id="@+id/buttonCalculate"
         android:layout_width="377dp"
         android:layout_height="78dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
         android:text="Mostrar Série"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="213dp" />
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValor" />
 
     <TextView
         android:id="@+id/textViewSerie"
-        android:layout_width="376dp"
-        android:layout_height="559dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="314dp" />
+        android:layout_width="377dp"
+        android:layout_height="384dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        buttonCalcular = findViewById(R.id.buttonCalcular);
+        buttonCalcular = findViewById(R.id.buttonCalculate);
         textViewSerie = findViewById(R.id.textViewSerie);
         editTextValor = findViewById(R.id.editTextValor);
 
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             textViewSerie.setText("Resultado da série:\n"+soma);
-            textViewSerie.setTextColor(Color.parseColor("#FF0000"));
+            textViewSerie.setTextColor(Color.parseColor("#008000"));
 
         }else{
             textViewSerie.setText("Valor Inválido.");
